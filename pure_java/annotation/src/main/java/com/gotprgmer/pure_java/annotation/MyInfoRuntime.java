@@ -1,4 +1,4 @@
-package src.main.com.gotprgmer.pure_java.annotation;
+package com.gotprgmer.pure_java.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

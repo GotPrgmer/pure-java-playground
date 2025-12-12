@@ -1,11 +1,11 @@
-package src.main.com.gotprgmer.pure_java.annotation;
+package com.gotprgmer.pure_java.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Target(ElementType.TYPE)
-@Retention(RetentionPolicy.SOURCE)
-public @interface MyInfoSource {
+@Target({ElementType.FIELD,ElementType.TYPE})
+@Retention(RetentionPolicy.RUNTIME)
+public @interface Getter {
 }

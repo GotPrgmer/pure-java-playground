@@ -1,0 +1,3 @@
+rootProject.name = "pure-java-playground"
+
+include("pure_java:annotation")
