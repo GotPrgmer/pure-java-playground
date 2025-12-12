@@ -1,0 +1,19 @@
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}
+
+subprojects {
+    apply plugin: "java-library"   // 라이브러리 모듈이면 java-library 권장
+
+    java {
+        toolchain {
+            languageVersion = JavaLanguageVersion.of(21)
+        }
+    }
+
+    test {
+        useJUnitPlatform()
+    }
+}

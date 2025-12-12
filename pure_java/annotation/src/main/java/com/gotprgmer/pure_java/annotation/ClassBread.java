@@ -1,10 +1,10 @@
-package src.main.com.gotprgmer.pure_java.annotation;
+package com.gotprgmer.pure_java.annotation;
 
-@MyInfoSource
-public class SourceBread extends Bread{
+@MyInfoClass
+public class ClassBread extends Bread{
     private String recipe;
     private String cook;
-    public SourceBread(){
+    public ClassBread(){
     }
 //    public void setRecipe(String newRecipe){
 //        this.recipe = newRecipe;
