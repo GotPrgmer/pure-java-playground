@@ -1,6 +1,6 @@
 package com.gotprgmer.pure_java.annotation;
 
-@MyInfoClass
+@MyInfoClass(name = "gotprgmer", version=10)
 public class ClassBread extends Bread{
     private String recipe;
     private String cook;
