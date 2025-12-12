@@ -1,0 +1,25 @@
+plugins {
+    id "java"
+    id "application"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform("org.junit:junit-bom:5.10.2")
+    testImplementation "org.junit.jupiter:junit-jupiter"
+
+    // java bytecode maniplulation을 위한 framework
+    implementation "org.ow2.asm:asm:9.7.1"
+    implementation "org.ow2.asm:asm-util:9.7.1"
+}
+
+application {
+    mainClass = "com.gotprgmer.pure_java.annotation.AnnotationSimulator"
+}
+
+test {
+    useJUnitPlatform()
+}

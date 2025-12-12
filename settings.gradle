@@ -1,3 +1,4 @@
 rootProject.name = "pure-java-playground"
 
-include("pure_java:annotation")
+include(":pure_java:annotation")
+project(":pure_java:annotation").projectDir = file("pure_java/annotation")
